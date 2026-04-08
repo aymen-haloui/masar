@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="منصة مسار - منصة إلكترونية للاستثمار الذكي وتوجيه المستثمرين ودراسة الملفات وتقييم المخاطر">
+    <title>منصة مسار | دليلك الذكي للاستثمار الناجح</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-area">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="30" cy="30" r="28" fill="#1a3a6b" stroke="#D4AF37" stroke-width="2"/>
+                        <polyline points="10,42 22,26 32,34 50,14" fill="none" stroke="#D4AF37" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <polygon points="50,14 43,14 50,21" fill="#D4AF37"/>
+                        <circle cx="10" cy="42" r="2.5" fill="#D4AF37"/>
+                        <circle cx="22" cy="26" r="2.5" fill="#D4AF37"/>
+                        <circle cx="32" cy="34" r="2.5" fill="#D4AF37"/>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-sub">منصة</span>
+                    <span class="logo-main">مسار</span>
+                </div>
+            </div>
+            <nav class="top-nav" aria-label="القائمة الرئيسية">
+                <ul>
+                    <li><a href="#" class="nav-link active">الرئيسية</a></li>
+                    <li><a href="#" class="nav-link">عن المنصة</a></li>
+                    <li><a href="#services" class="nav-link">خدماتنا</a></li>
+                    <li><a href="#" class="nav-link">اتصل بنا</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="btn-login" id="btn-login">تسجيل الدخول</button>
+                <button class="btn-register" id="btn-register">إنشاء حساب</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-bg-pattern"></div>
+            <div class="page-container hero-inner">
+                <div class="hero-content">
+                    <div class="hero-badge">🚀 منصتك للنجاح الاستثماري</div>
+                    <h1 class="hero-title">دليلك الذكي للاستثمار الناجح</h1>
+                    <p class="hero-subtitle">توجيه &bull; تحليل &bull; وتنمية</p>
+                    <p class="hero-desc">نقدم لك أدوات استثمارية متكاملة وخبراء متخصصين لمساعدتك في اتخاذ قرارات مالية ذكية وآمنة.</p>
+                    <div class="hero-cta">
+                        <button class="btn-primary" id="btn-start">ابدأ الآن</button>
+                        <button class="btn-outline" id="btn-learn">تعرف على المنصة</button>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-num">+500</span>
+                            <span class="stat-label">مستثمر نشط</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <span class="stat-num">+120</span>
+                            <span class="stat-label">صفقة ناجحة</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <span class="stat-num">98%</span>
+                            <span class="stat-label">رضا العملاء</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="chart-container">
+                        <svg viewBox="0 0 420 300" xmlns="http://www.w3.org/2000/svg" class="hero-chart">
+                            <!-- Grid lines -->
+                            <line x1="30" y1="20" x2="30" y2="260" stroke="#e2e8ff" stroke-width="1"/>
+                            <line x1="30" y1="260" x2="410" y2="260" stroke="#e2e8ff" stroke-width="1"/>
+                            <line x1="30" y1="200" x2="410" y2="200" stroke="#e2e8ff" stroke-width="0.5" stroke-dasharray="4"/>
+                            <line x1="30" y1="140" x2="410" y2="140" stroke="#e2e8ff" stroke-width="0.5" stroke-dasharray="4"/>
+                            <line x1="30" y1="80" x2="410" y2="80" stroke="#e2e8ff" stroke-width="0.5" stroke-dasharray="4"/>
+                            <!-- Area fill -->
+                            <path d="M50,230 C80,210 110,215 150,195 S220,165 270,140 S350,100 400,70 L400,260 L50,260 Z"
+                                  fill="url(#areaGradient)" opacity="0.4"/>
+                            <!-- Main line -->
+                            <path d="M50,230 C80,210 110,215 150,195 S220,165 270,140 S350,100 400,70"
+                                  fill="none" stroke="url(#lineGradient)" stroke-width="3.5" stroke-linecap="round"/>
+                            <!-- Data points -->
+                            <circle cx="50" cy="230" r="5" fill="#fff" stroke="#1a4a7c" stroke-width="2.5"/>
+                            <circle cx="150" cy="195" r="5" fill="#fff" stroke="#1a4a7c" stroke-width="2.5"/>
+                            <circle cx="270" cy="140" r="5" fill="#fff" stroke="#D4AF37" stroke-width="2.5"/>
+                            <circle cx="400" cy="70" r="7" fill="#D4AF37" stroke="#fff" stroke-width="2"/>
+                            <!-- Bar chart (background) -->
+                            <rect x="60" y="200" width="20" height="60" fill="#1a4a7c" opacity="0.15" rx="3"/>
+                            <rect x="100" y="185" width="20" height="75" fill="#1a4a7c" opacity="0.15" rx="3"/>
+                            <rect x="140" y="175" width="20" height="85" fill="#D4AF37" opacity="0.2" rx="3"/>
+                            <rect x="180" y="160" width="20" height="100" fill="#1a4a7c" opacity="0.15" rx="3"/>
+                            <rect x="220" y="140" width="20" height="120" fill="#D4AF37" opacity="0.2" rx="3"/>
+                            <rect x="260" y="120" width="20" height="140" fill="#1a4a7c" opacity="0.15" rx="3"/>
+                            <rect x="300" y="100" width="20" height="160" fill="#D4AF37" opacity="0.2" rx="3"/>
+                            <rect x="340" y="80" width="20" height="180" fill="#1a4a7c" opacity="0.15" rx="3"/>
+                            <rect x="380" y="50" width="20" height="210" fill="#D4AF37" opacity="0.25" rx="3"/>
+                            <!-- Tooltip tag -->
+                            <rect x="355" y="30" width="80" height="30" rx="6" fill="#1a4a7c"/>
+                            <text x="395" y="50" text-anchor="middle" fill="#D4AF37" font-size="12" font-family="Cairo" font-weight="bold">+28%</text>
+                            <!-- Gear icon -->
+                            <g transform="translate(370, 220) scale(0.7)" opacity="0.6">
+                                <path d="M12 1.5a10.5 10.5 0 1 0 0 21 10.5 10.5 0 0 0 0-21zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z" fill="none" stroke="#1a4a7c" stroke-width="2"/>
+                            </g>
+                            <!-- Gradients -->
+                            <defs>
+                                <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" stop-color="#1a4a7c"/>
+                                    <stop offset="100%" stop-color="#D4AF37"/>
+                                </linearGradient>
+                                <linearGradient id="areaGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" stop-color="#1a4a7c" stop-opacity="0.4"/>
+                                    <stop offset="100%" stop-color="#1a4a7c" stop-opacity="0"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <div class="chart-label">نمو الاستثمارات 2024-2026</div>
+                    </div>
+                    <div class="floating-card card-1">
+                        <span class="fc-icon">📈</span>
+                        <div>
+                            <div class="fc-title">نمو سنوي</div>
+                            <div class="fc-value">+28%</div>
+                        </div>
+                    </div>
+                    <div class="floating-card card-2">
+                        <span class="fc-icon">✅</span>
+                        <div>
+                            <div class="fc-title">ملفات مُحللة</div>
+                            <div class="fc-value">1,240</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-wave">
+                <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                    <path d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,80 L0,80 Z" fill="#f0f4ff"/>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Main Grid -->
+        <div class="page-container main-layout" id="services">
+            <!-- Services Grid -->
+            <section class="services-section" aria-label="الخدمات الرئيسية">
+                <div class="section-header">
+                    <h2>خدماتنا الرئيسية</h2>
+                    <p>اختر الخدمة التي تحتاجها وانطلق نحو استثمار ناجح</p>
+                </div>
+                <div class="services-grid">
+                    <!-- Card 1: File Upload -->
+                    <div class="service-card" id="file-upload" tabindex="0" role="button" aria-label="تحميل الملف">
+                        <div class="card-glow blue-glow"></div>
+                        <div class="card-icon-wrap blue-wrap">
+                            <svg viewBox="0 0 40 40" class="card-svg" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="6" y="4" width="28" height="32" rx="4" fill="#dbeafe" stroke="#1a4a7c" stroke-width="1.5"/>
+                                <polyline points="14,18 20,12 26,18" fill="none" stroke="#1a4a7c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <line x1="20" y1="12" x2="20" y2="26" stroke="#1a4a7c" stroke-width="2" stroke-linecap="round"/>
+                                <line x1="14" y1="30" x2="26" y2="30" stroke="#1a4a7c" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">تحميل الملف</h3>
+                        <p class="card-desc">ارفع ملفك المالي وسيتم تحليله بالذكاء الاصطناعي</p>
+                        <div class="card-arrow">←</div>
+                    </div>
+
+                    <!-- Card 2: Legal -->
+                    <div class="service-card" id="legal-consult" tabindex="0" role="button" aria-label="الاستشارات القانونية">
+                        <div class="card-glow gold-glow"></div>
+                        <div class="card-icon-wrap gold-wrap">
+                            <svg viewBox="0 0 40 40" class="card-svg" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="16" y="4" width="8" height="5" rx="1.5" fill="#D4AF37"/>
+                                <rect x="17" y="9" width="6" height="14" rx="1" fill="#c5a044"/>
+                                <ellipse cx="20" cy="26" rx="10" ry="3" fill="#D4AF37" opacity="0.4"/>
+                                <rect x="10" y="22" width="20" height="3" rx="1.5" fill="#D4AF37"/>
+                                <line x1="20" y1="28" x2="20" y2="34" stroke="#c5a044" stroke-width="2"/>
+                                <line x1="12" y1="34" x2="28" y2="34" stroke="#c5a044" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">الاستشارات القانونية</h3>
+                        <p class="card-desc">احصل على استشارة قانونية متخصصة في قانون الاستثمار</p>
+                        <div class="card-arrow">←</div>
+                    </div>
+
+                    <!-- Card 3: Financial -->
+                    <div class="service-card" id="financial-consult" tabindex="0" role="button" aria-label="الاستشارات المالية">
+                        <div class="card-glow blue-glow"></div>
+                        <div class="card-icon-wrap blue-wrap">
+                            <svg viewBox="0 0 40 40" class="card-svg" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="5" y="22" width="6" height="14" rx="2" fill="#1a4a7c" opacity="0.5"/>
+                                <rect x="14" y="16" width="6" height="20" rx="2" fill="#1a4a7c" opacity="0.7"/>
+                                <rect x="23" y="10" width="6" height="26" rx="2" fill="#1a4a7c"/>
+                                <path d="M8 20 L17 14 L26 8" fill="none" stroke="#D4AF37" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="26" cy="8" r="3" fill="#D4AF37"/>
+                                <circle cx="8" cy="20" r="2.5" fill="#1a4a7c"/>
+                                <circle cx="17" cy="14" r="2.5" fill="#1a4a7c"/>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">الاستشارات المالية</h3>
+                        <p class="card-desc">خبراء ماليون يساعدونك في تحليل العوائد وتوزيع الاستثمار</p>
+                        <div class="card-arrow">←</div>
+                    </div>
+
+                    <!-- Card 4: Tenders -->
+                    <div class="service-card" id="public-tenders" tabindex="0" role="button" aria-label="الصفقات العمومية">
+                        <div class="card-glow gold-glow"></div>
+                        <div class="card-icon-wrap gold-wrap">
+                            <svg viewBox="0 0 40 40" class="card-svg" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 5 L8 12 L8 28 L20 35 L32 28 L32 12 Z" fill="#fef3c7" stroke="#D4AF37" stroke-width="1.5"/>
+                                <path d="M20 5 L20 35" stroke="#D4AF37" stroke-width="1" stroke-dasharray="3"/>
+                                <path d="M8 12 L32 12" stroke="#D4AF37" stroke-width="1" stroke-dasharray="3"/>
+                                <path d="M8 28 L32 28" stroke="#D4AF37" stroke-width="1" stroke-dasharray="3"/>
+                                <circle cx="20" cy="20" r="5" fill="#D4AF37" opacity="0.8"/>
+                                <text x="20" y="24" text-anchor="middle" fill="white" font-size="7" font-weight="bold">DZ</text>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">الصفقات العمومية</h3>
+                        <p class="card-desc">تابع أحدث الصفقات العمومية والمناقصات الحكومية</p>
+                        <div class="card-arrow">←</div>
+                    </div>
+
+                    <!-- Card 5: Risk -->
+                    <div class="service-card" id="risk-study" tabindex="0" role="button" aria-label="دراسة المخاطر">
+                        <div class="card-glow blue-glow"></div>
+                        <div class="card-icon-wrap blue-wrap">
+                            <svg viewBox="0 0 40 40" class="card-svg" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 5 L35 32 L5 32 Z" fill="#fef2f2" stroke="#c0392b" stroke-width="1.5" stroke-linejoin="round"/>
+                                <line x1="20" y1="16" x2="20" y2="24" stroke="#c0392b" stroke-width="2.5" stroke-linecap="round"/>
+                                <circle cx="20" cy="28" r="1.8" fill="#c0392b"/>
+                                <!-- Trend line positive -->
+                                <path d="M8 26 L14 20 L20 23 L28 15" fill="none" stroke="#1a9e5a" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">دراسة المخاطر</h3>
+                        <p class="card-desc">تقييم شامل للمخاطر المالية والقانونية لمشروعك</p>
+                        <div class="card-arrow">←</div>
+                    </div>
+
+                    <!-- Card 6: Investment Sector (clickable) -->
+                    <div class="service-card service-card--featured clickable" id="investment-sector" tabindex="0" role="button" aria-label="قطاع الاستثمار - انقر لرؤية التفاصيل" aria-haspopup="true">
+                        <div class="card-glow gold-glow"></div>
+                        <div class="card-icon-wrap gold-wrap">
+                            <svg viewBox="0 0 40 40" class="card-svg" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20" cy="20" r="8" fill="#fef3c7" stroke="#D4AF37" stroke-width="2"/>
+                                <circle cx="20" cy="8" r="4" fill="#D4AF37" opacity="0.7"/>
+                                <circle cx="20" cy="32" r="4" fill="#D4AF37" opacity="0.7"/>
+                                <circle cx="8" cy="20" r="4" fill="#1a4a7c" opacity="0.7"/>
+                                <circle cx="32" cy="20" r="4" fill="#1a4a7c" opacity="0.7"/>
+                                <line x1="20" y1="12" x2="20" y2="14" stroke="#D4AF37" stroke-width="1.5"/>
+                                <line x1="20" y1="26" x2="20" y2="28" stroke="#D4AF37" stroke-width="1.5"/>
+                                <line x1="12" y1="20" x2="14" y2="20" stroke="#1a4a7c" stroke-width="1.5"/>
+                                <line x1="26" y1="20" x2="28" y2="20" stroke="#1a4a7c" stroke-width="1.5"/>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">قطاع الاستثمار</h3>
+                        <p class="card-desc">استعرض جميع قطاعات الاستثمار المتاحة وفرصها</p>
+                        <div class="card-arrow featured-arrow">اكتشف ←</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sidebar -->
+            <aside class="sidebar" aria-label="الشريط الجانبي">
+                <!-- Opportunities Widget -->
+                <div class="widget widget--opportunities">
+                    <div class="widget-header">
+                        <span class="widget-icon">📊</span>
+                        <h4>أبرز الفرص الحالية</h4>
+                    </div>
+                    <div class="opportunity-list">
+                        <div class="opp-item">
+                            <div class="opp-badge opp-badge--real">عقاري</div>
+                            <div class="opp-info">
+                                <span class="opp-name">مشروع إسكان وهران</span>
+                                <span class="opp-return">عائد: 18%</span>
+                            </div>
+                            <span class="opp-arrow">←</span>
+                        </div>
+                        <div class="opp-item">
+                            <div class="opp-badge opp-badge--agri">زراعي</div>
+                            <div class="opp-info">
+                                <span class="opp-name">مزرعة جنوب البليدة</span>
+                                <span class="opp-return">عائد: 12%</span>
+                            </div>
+                            <span class="opp-arrow">←</span>
+                        </div>
+                        <div class="opp-item">
+                            <div class="opp-badge opp-badge--tech">تقني</div>
+                            <div class="opp-info">
+                                <span class="opp-name">منصة تجارة إلكترونية</span>
+                                <span class="opp-return">عائد: 32%</span>
+                            </div>
+                            <span class="opp-arrow">←</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Analysis Widget -->
+                <div class="widget widget--ai">
+                    <div class="widget-header">
+                        <span class="widget-icon">🤖</span>
+                        <h4>توجيه ذكي: تحليل الملف</h4>
+                    </div>
+                    <p>ارفع ملفك المالي وسيقوم نظام الذكاء الاصطناعي بتحليله وتقديم توصيات دقيقة للاستثمار الأمثل.</p>
+                    <button class="btn-widget" id="btn-ai-analysis">ابدأ التحليل الذكي</button>
+                </div>
+
+                <!-- News Widget -->
+                <div class="widget widget--news">
+                    <div class="widget-header">
+                        <span class="widget-icon">📰</span>
+                        <h4>آخر أخبار الصفقات العمومية</h4>
+                    </div>
+                    <div class="news-list">
+                        <div class="news-item">
+                            <div class="news-dot"></div>
+                            <div class="news-body">
+                                <p>إطلاق مناقصة وطنية لمشاريع البنية التحتية الجزائرية 2026</p>
+                                <span class="news-date">منذ ساعتين</span>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <div class="news-dot"></div>
+                            <div class="news-body">
+                                <p>الإعلان عن صفقات القطاع الزراعي في الجنوب الكبير</p>
+                                <span class="news-date">منذ 5 ساعات</span>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <div class="news-dot news-dot--old"></div>
+                            <div class="news-body">
+                                <p>بروتوكول تعاون بين وزارة المالية وعدد من الصناديق العربية</p>
+                                <span class="news-date">أمس</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-main">
+            <div class="page-container footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" width="40" height="40">
+                            <circle cx="30" cy="30" r="28" fill="#1a3a6b" stroke="#D4AF37" stroke-width="2"/>
+                            <polyline points="10,42 22,26 32,34 50,14" fill="none" stroke="#D4AF37" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <polygon points="50,14 43,14 50,21" fill="#D4AF37"/>
+                        </svg>
+                        <span>منصة مسار</span>
+                    </div>
+                    <p>منصة إلكترونية متكاملة للاستثمار الذكي وتوجيه المستثمرين في الجزائر والوطن العربي.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-btn" aria-label="فيسبوك" id="social-fb">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                        <a href="#" class="social-btn" aria-label="تويتر" id="social-tw">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+                        </a>
+                        <a href="#" class="social-btn" aria-label="إنستغرام" id="social-ig">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links-group">
+                    <h5>الخدمات</h5>
+                    <ul>
+                        <li><a href="#">تحميل الملف</a></li>
+                        <li><a href="#">الاستشارات القانونية</a></li>
+                        <li><a href="#">الاستشارات المالية</a></li>
+                        <li><a href="#">الصفقات العمومية</a></li>
+                        <li><a href="#">دراسة المخاطر</a></li>
+                        <li><a href="#">قطاع الاستثمار</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h5>المنصة</h5>
+                    <ul>
+                        <li><a href="#">عن مسار</a></li>
+                        <li><a href="#">الأسئلة الشائعة</a></li>
+                        <li><a href="#">سياسة الخصوصية</a></li>
+                        <li><a href="#">شروط الاستخدام</a></li>
+                        <li><a href="#">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h5>تواصل معنا</h5>
+                    <ul class="contact-list">
+                        <li>📍 الجزائر العاصمة، الجزائر</li>
+                        <li>📧 info@masar-dz.com</li>
+                        <li>📞 +213 23 456 789</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="page-container footer-bottom-inner">
+                <p>© 2026 جميع الحقوق محفوظة — منصة مسار للاستثمار الذكي</p>
+                <div class="footer-bottom-links">
+                    <a href="#">السياسات</a>
+                    <a href="#">اتصل بنا</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Investment Sector Modal -->
+    <div id="investment-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title">قطاعات الاستثمار</h2>
+                <p>اختر القطاع الذي يناسب استثمارك</p>
+                <button class="modal-close" id="modal-close-btn" aria-label="إغلاق">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22">
+                        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="sectors-grid">
+                <div class="sector-item" id="sector-real-estate">
+                    <div class="sector-icon">🏠</div>
+                    <h4>العقاري</h4>
+                    <p>سكن تجاري وصناعي</p>
+                    <span class="sector-tag">عائد: 15-22%</span>
+                </div>
+                <div class="sector-item" id="sector-agri">
+                    <div class="sector-icon">🌾</div>
+                    <h4>الزراعي</h4>
+                    <p>مزارع وإنتاج غذائي</p>
+                    <span class="sector-tag">عائد: 10-18%</span>
+                </div>
+                <div class="sector-item" id="sector-industrial">
+                    <div class="sector-icon">🏭</div>
+                    <h4>الصناعي</h4>
+                    <p>مصانع ومنشآت إنتاجية</p>
+                    <span class="sector-tag">عائد: 20-35%</span>
+                </div>
+                <div class="sector-item" id="sector-commercial">
+                    <div class="sector-icon">🏢</div>
+                    <h4>التجاري</h4>
+                    <p>متاجر ومراكز تسوق</p>
+                    <span class="sector-tag">عائد: 12-25%</span>
+                </div>
+                <div class="sector-item" id="sector-tech">
+                    <div class="sector-icon">💻</div>
+                    <h4>المعلوماتي</h4>
+                    <p>شركات تقنية ومنصات رقمية</p>
+                    <span class="sector-tag">عائد: 25-50%</span>
+                </div>
+                <div class="sector-item" id="sector-medical">
+                    <div class="sector-icon">🏥</div>
+                    <h4>الطبي</h4>
+                    <p>عيادات ومستشفيات ومختبرات</p>
+                    <span class="sector-tag">عائد: 18-30%</span>
+                </div>
+                <div class="sector-item" id="sector-tourism">
+                    <div class="sector-icon">🌴</div>
+                    <h4>السياحي</h4>
+                    <p>فنادق ومنتجعات سياحية</p>
+                    <span class="sector-tag">عائد: 14-28%</span>
+                </div>
+                <div class="sector-item" id="sector-energy">
+                    <div class="sector-icon">⚡</div>
+                    <h4>الطاقة</h4>
+                    <p>طاقة متجددة وشمسية وريحية</p>
+                    <span class="sector-tag">عائد: 22-40%</span>
+                </div>
+                <div class="sector-item" id="sector-transport">
+                    <div class="sector-icon">🚛</div>
+                    <h4>النقل واللوجستيك</h4>
+                    <p>شركات شحن ونقل بضائع</p>
+                    <span class="sector-tag">عائد: 16-28%</span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-primary" id="btn-consult-modal">احصل على استشارة متخصصة</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
