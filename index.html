@@ -72,8 +72,14 @@
                         </div>
                         <div class="stat-divider"></div>
                         <div class="stat">
-                            <span class="stat-num">98%</span>
-                            <span class="stat-label">رضا العملاء</span>
+                            <div class="star-rating" aria-label="تقييم 5 نجوم">
+                                <span class="star active">★</span>
+                                <span class="star active">★</span>
+                                <span class="star active">★</span>
+                                <span class="star active">★</span>
+                                <span class="star active">★</span>
+                            </div>
+                            <span class="stat-label">98% رضا العملاء</span>
                         </div>
                     </div>
                 </div>
@@ -165,10 +171,9 @@
                         <div class="card-glow blue-glow"></div>
                         <div class="card-icon-wrap blue-wrap">
                             <svg viewBox="0 0 40 40" class="card-svg" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="6" y="4" width="28" height="32" rx="4" fill="#dbeafe" stroke="#1a4a7c" stroke-width="1.5"/>
-                                <polyline points="14,18 20,12 26,18" fill="none" stroke="#1a4a7c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <line x1="20" y1="12" x2="20" y2="26" stroke="#1a4a7c" stroke-width="2" stroke-linecap="round"/>
-                                <line x1="14" y1="30" x2="26" y2="30" stroke="#1a4a7c" stroke-width="2" stroke-linecap="round"/>
+                                <rect x="8" y="4" width="24" height="32" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 20 L20 28 L28 20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <line x1="20" y1="12" x2="20" y2="28" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
                             </svg>
                         </div>
                         <h3 class="card-title">تحميل الملف</h3>
@@ -181,12 +186,11 @@
                         <div class="card-glow gold-glow"></div>
                         <div class="card-icon-wrap gold-wrap">
                             <svg viewBox="0 0 40 40" class="card-svg" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="16" y="4" width="8" height="5" rx="1.5" fill="#D4AF37"/>
-                                <rect x="17" y="9" width="6" height="14" rx="1" fill="#c5a044"/>
-                                <ellipse cx="20" cy="26" rx="10" ry="3" fill="#D4AF37" opacity="0.4"/>
-                                <rect x="10" y="22" width="20" height="3" rx="1.5" fill="#D4AF37"/>
-                                <line x1="20" y1="28" x2="20" y2="34" stroke="#c5a044" stroke-width="2"/>
-                                <line x1="12" y1="34" x2="28" y2="34" stroke="#c5a044" stroke-width="2" stroke-linecap="round"/>
+                                <!-- Scale of Justice -->
+                                <path d="M20 8 V32 M10 32 H30" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M8 14 L32 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M8 14 L5 24 C5 27 11 27 11 24 Z" fill="currentColor" opacity="0.2" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M32 14 L35 24 C35 27 29 27 29 24 Z" fill="currentColor" opacity="0.2" stroke="currentColor" stroke-width="1.5"/>
                             </svg>
                         </div>
                         <h3 class="card-title">الاستشارات القانونية</h3>
@@ -419,7 +423,29 @@
         </div>
     </footer>
 
-    <!-- Investment Sector Modal -->
+    <!-- Universal Service Detail Modal -->
+    <div id="service-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="service-modal-title" aria-hidden="true">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="service-modal-title">تفاصيل الخدمة</h2>
+                <p id="service-modal-desc">نرجو اختيار القسم المناسب لاستشارتكم</p>
+                <button class="modal-close" id="service-modal-close-btn" aria-label="إغلاق">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22">
+                        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="sub-services-grid" id="sub-services-container">
+                <!-- Content will be injected by JavaScript -->
+            </div>
+            <div class="modal-footer">
+                <button class="btn-primary" id="btn-service-action">بدء الخدمة</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Investment Sector Modal (Existing) -->
     <div id="investment-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
         <div class="modal-backdrop"></div>
         <div class="modal-content">
