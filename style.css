@@ -546,6 +546,38 @@ button {
     height: 40px;
 }
 
+.card-price {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: var(--radius-full);
+    font-weight: 700;
+    font-size: 0.85rem;
+    z-index: 2;
+    transition: var(--transition);
+}
+
+.price-blue {
+    background: rgba(30, 58, 95, 0.1);
+    color: var(--primary);
+}
+
+.price-gold {
+    background: rgba(212, 175, 55, 0.15);
+    color: var(--gold-dark);
+}
+
+.service-card:hover .price-blue {
+    background: var(--primary);
+    color: white;
+}
+
+.service-card:hover .price-gold {
+    background: var(--gold);
+    color: white;
+}
+
 .card-title {
     font-size: 1.3rem;
     font-weight: 700;
