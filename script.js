@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'legal-consult': {
             title: 'الاستشارات القانونية',
             desc: 'نخبة من المستشارين القانونيين في خدمتكم',
+            actionLabel: 'ابدأ الاستشارة',
             subs: [
                 { icon: '⚖️', title: 'القانون العقاري', desc: 'منازعات العقار والتوثيق' },
                 { icon: '📜', title: 'القانون المدني', desc: 'العقود والالتزامات المدنية' },
@@ -29,10 +30,24 @@ document.addEventListener('DOMContentLoaded', () => {
         'financial-consult': {
             title: 'الاستشارات المالية',
             desc: 'تحليل مالي دقيق لمشاريعكم الاستثمارية',
+            actionLabel: 'ابدأ الاستشارة',
             subs: [
                 { icon: '📊', title: 'تكاليف التنفيذ', desc: 'دراسة وتحليل ميزانية التنفيذ' },
                 { icon: '⚙️', title: 'تكاليف الإنتاج', desc: 'تحسين كفاءة وتكاليف الإنتاج' },
                 { icon: '🚚', title: 'تكاليف التوزيع', desc: 'تخطيط وتوفير تكاليف اللوجستيك' }
+            ]
+        },
+        'investment-ads': {
+            title: 'الإعلانات الاستثمارية',
+            desc: 'انشر إعلانك الاستثماري مقابل 2000 دج في القطاعات الأكثر طلبا على المنصة',
+            actionLabel: 'احجز إعلانك الآن',
+            subs: [
+                { icon: '🏢', title: 'إعلانات عقارية', desc: 'شقق ومجمعات ومحلات ومشاريع تطوير عقاري' },
+                { icon: '🏥', title: 'إعلانات صحية', desc: 'مصحات وعيادات وتجهيزات وخدمات طبية' },
+                { icon: '🌾', title: 'إعلانات فلاحية', desc: 'مزارع وبيوت بلاستيكية وتجهيزات وسقي' },
+                { icon: '🚛', title: 'إعلانات النقل', desc: 'شاحنات ولوجستيك ونقل بضائع ومسافرين' },
+                { icon: '🏭', title: 'إعلانات صناعية', desc: 'ورشات ومصانع وخطوط إنتاج وشراكات' },
+                { icon: '🏨', title: 'إعلانات خدماتية', desc: 'سياحة وتعليم وتقنية وخدمات مهنية' }
             ]
         }
     };
@@ -46,6 +61,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const data = serviceData[dataKey];
             modal.title.textContent = data.title;
             modal.desc.textContent = data.desc;
+            const actionButton = document.getElementById('btn-service-action');
+            if (actionButton && data.actionLabel) {
+                actionButton.textContent = data.actionLabel;
+            }
             
             modal.container.innerHTML = data.subs.map(sub => `
                 <div class="sub-service-item">
@@ -88,10 +107,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Set up dynamic service cards
-    ['legal-consult', 'financial-consult'].forEach(id => {
+    ['legal-consult', 'financial-consult', 'investment-ads'].forEach(id => {
         const card = document.getElementById(id);
         if (card) {
             card.addEventListener('click', () => openModal('service', id));
+            card.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    openModal('service', id);
+                }
+            });
         }
     });
 
